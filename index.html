@@ -17,18 +17,27 @@ heap.load("3911424980");
 		  
 		  heap.addUserProperties({campaign: 'UserpropertyTest - test'});
 		  
-	  if (document.URL.includes('test'))
-{
-    console.log('test')
-    heap.identify('test@test.com')
-	heap.addUserProperties({plan: "test Startup"});
-}
-		  	  if (document.URL.includes('rowan'))
-{
-    console.log('rowan')
-    heap.identify('rowan@test.com')
-	heap.addUserProperties({plan: "Startup"});
-}
+if (document.URL.includes('test'))
+	{
+	    console.log('test')
+	    heap.identify('test@test.com')
+	    heap.addUserProperties({plan: "test Startup"});
+	    heap.addUserProperties({Account_Subscription: "test test test tier"});
+	}
+if (document.URL.includes('rowan'))
+	{
+	    console.log('rowan')
+	    heap.identify('rowan@test.com')
+	    heap.addUserProperties({plan: "Startup"});
+		heap.addUserProperties({Account_Subscription: "Rowan's tier."});
+	}
+if (document.URL.includes('jamie'))
+	{
+	    console.log('jamie')
+	    heap.identify('Jamie is da bomb')
+		heap.addUserProperties({Account_Subscription: "Only the top elite tier."});
+		heap.addUserProperties({plan: "up and running"});
+	}
 		  </script>
   </head>
   <body>
