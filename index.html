@@ -37,21 +37,21 @@ fetch('https://heapanalytics.com/api/add_account_properties', options)
 if (document.URL.includes('test'))
 	{
 	    console.log('test')
-	    heap.identify('test@test.com')
+	    heap.identify('test@test.com123456')
 	    heap.addUserProperties({plan: "test Startup"});
 	    heap.addUserProperties({Account_Subscription: "test test test tier"});
 	}
 if (document.URL.includes('rowan'))
 	{
 	    console.log('rowan')
-	    heap.identify('rowan@test.com')
+	    heap.identify('rowan@test.com123456')
 	    heap.addUserProperties({plan: "Startup"});
 		heap.addUserProperties({Account_Subscription: "Rowan's tier."});
 	}
 if (document.URL.includes('jamie'))
 	{
-	    console.log('jamie')
-	    heap.identify('Jamie is da bomb')
+	    console.log('jamie123456')
+	    heap.identify('Jamie')
 		heap.addUserProperties({Account_Subscription: "Only the top elite tier."});
 		heap.addUserProperties({plan: "up and running"});
 	}
